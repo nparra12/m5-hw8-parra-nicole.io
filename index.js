@@ -33,15 +33,19 @@ for (var i = 0; i < boxElements.length; i++){
     console.log(randomNumber)
     // This number will represent the winning box
         // determine if the box clicked is equal to the random number
+        var messageElement = document.getElementById('message')
+
         if (numWasClicked === randomNumber) {
-            console.log('You WIN!!!!')
+            //console.log('You WIN!!!!')
 
             // if the numbers match, display a winning message by changing the text content of the div#message element
+           document.getElementById('message').innerHTML = 'You WIN!!!'
+
             // if the numbers match, increment wins and display the win count in div#wins
             
         } else {
             console.log('Try again.')
-            
+
             // if the numbers don't match, change the div#message element's text to a random losing message from the array above
             // if the numbers don't match, increment losses and display the loss count in div#losses
         }
