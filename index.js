@@ -44,8 +44,7 @@ for (var i = 0; i < boxElements.length; i++){
 
             // if the numbers match, increment wins and display the win count in div#wins
             wins = wins + 1
-            winsEl.innerHTML = wins
-           
+            winsEl.innerHTML = ('WINS:') + wins
           
                            
         } else {
@@ -54,8 +53,8 @@ for (var i = 0; i < boxElements.length; i++){
             // if the numbers don't match, change the div#message element's text to a random losing message from the array above
             document.getElementById('message').innerHTML = 'You lost :('
             // if the numbers don't match, increment losses and display the loss count in div#losses
-            losses = losses +1
-            lossesEl.innerHTML = losses
+            losses = losses + 1
+            lossesEl.innerHTML = ('LOSSES:') + losses
         }
     }
 }
