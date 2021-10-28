@@ -40,14 +40,22 @@ for (var i = 0; i < boxElements.length; i++){
 
             // if the numbers match, display a winning message by changing the text content of the div#message element
            document.getElementById('message').innerHTML = 'You WIN!!!'
+  
 
             // if the numbers match, increment wins and display the win count in div#wins
-            
+            wins = wins + 1
+            winsEl.innerHTML = wins
+           
+          
+                           
         } else {
             console.log('Try again.')
 
             // if the numbers don't match, change the div#message element's text to a random losing message from the array above
+            document.getElementById('message').innerHTML = 'You lost :('
             // if the numbers don't match, increment losses and display the loss count in div#losses
+            losses = losses +1
+            lossesEl.innerHTML = losses
         }
     }
 }
