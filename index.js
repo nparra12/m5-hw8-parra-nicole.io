@@ -1,7 +1,7 @@
 // Create an Array of at least 3 losing messages
 var messages = [
-    'oops, try again',
-    'better luck next time',
+    'oops, try again.',
+    'better luck next time!',
     'not quite right...'
 ]
 // Create variables to count wins and losses
@@ -51,7 +51,10 @@ for (var i = 0; i < boxElements.length; i++){
             console.log('Try again.')
 
             // if the numbers don't match, change the div#message element's text to a random losing message from the array above
-            document.getElementById('message').innerHTML = 'You lost :('
+            //document.getElementById('message').innerHTML = messages
+
+            const randomMessages = messages[Math.floor(Math.random() * messages.length)]
+            document.getElementById('message').innerHTML = randomMessages
             // if the numbers don't match, increment losses and display the loss count in div#losses
             losses = losses + 1
             lossesEl.innerHTML = ('LOSSES:') + losses
