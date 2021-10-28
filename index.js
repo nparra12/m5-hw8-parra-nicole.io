@@ -1,8 +1,8 @@
 // Create an Array of at least 3 losing messages
 var messages = [
-    'oops, try again.',
-    'better luck next time!',
-    'not quite right...'
+    'oops, try again.😅',
+    'better luck next time!🤔',
+    'not quite right...😞'
 ]
 // Create variables to count wins and losses
 var wins = 0
@@ -39,7 +39,7 @@ for (var i = 0; i < boxElements.length; i++){
             //console.log('You WIN!!!!')
 
             // if the numbers match, display a winning message by changing the text content of the div#message element
-           document.getElementById('message').innerHTML = 'You WIN!!!'
+           document.getElementById('message').innerHTML = 'You WIN!!! 😃'
   
 
             // if the numbers match, increment wins and display the win count in div#wins
